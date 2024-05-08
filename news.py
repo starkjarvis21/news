@@ -52,7 +52,7 @@ def preprocess_text(text_list):
         processed_texts.append(" ".join(text))
     return processed_texts
 
-path = r"C:\Users\LENOVO\Documents\Web Mining\Assignment 2\NewsArticles.csv"
+path = r"NewsArticles.csv"
 data = pd.read_csv(path, encoding = "ISO-8859-1")
 data['processed_title'] = preprocess_text(data['title'].to_list())
 
